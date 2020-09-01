@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{physics}
+
+\begin{document}
+\begin{Large}
+
+\section{Q. 2.13}
+$(\bra{v})^\dagger=\ket{v}$\\
+$(\ket{w})^\dagger=\bra{w}$\\
+$(\ket{w}\bra{v})^\dagger=\bra{v}^\dagger\ket{w}^\dagger=\ket{v}\bra{w}$\\
+
+\section{Q . 2.14}
+
+$a_i$ is some complex number and $A_i$ is a matrix\\
+$(\sum\limits_{i}a_iA_i)^\dagger=((\sum\limits_{i}a_iA_i)^*)^T  =\sum\limits_{i}(a_i^*A_i^*)^T=\sum\limits_{i}a_i^*A_i^\dagger$\\
+
+
+\section{Q.2.15}
+
+A = $\sum\limits_{i}a_i\ket{i}\bra{i}$ 
+here $\ket{i}$ is the eigenvalues and $a_i$ is the corresponding eigenvalues.\\
+$A^\dagger =\sum\limits_{i}(a_i)^*\ket{i}\bra{i}$\\
+$(A^\dagger)^\dagger =\sum\limits_{i}(a_i)\ket{i}\bra{i}$\\
+$(A^\dagger)^\dagger = A$
+
+\section{Q. 2.16}
+projector operator P = $\sum\limits_{i}\ket{i}\bra{i}$ and each vector $\ket{i}$ is orthogonal to each other.
+\newline
+$P^2=P.P= \sum\limits_{i}\ket{i}\bra{i}\sum\limits_{j}\ket{j}\bra{j}$\\
+$=\sum\limits_{i,j}\ket{i}\bra{i}\ket{j}\bra{j}$\\
+$=\sum\limits_{i,j}\ket{i}\bra{j}\delta_i_j$\\
+$=\sum\limits_{i}\ket{i}\bra{i}=P$\\
+
+\section{Q.2.17}
+Any normal matrix follows the property $A^\dagger A= AA^\dagger$\\
+$A^\dagger A= AA^\dagger$\\
+$A^{-1} A^\dagger A= A^{-1}A A^\dagger$\\
+$A^{-1} A^\dagger A= A^\dagger$..............(1)\\
+for A to be hermetian it follows from eq (1) that: \\
+$A^{-1} A^\dagger = \mathbb I  \implies  A^\dagger= A$\\
+\newline
+if A = $\sum\limits_{i}a_i\ket{i}\bra{i}$ , where $\ket{i}$ are the eigenvectors of the A and $a_i $ are the eigenvalues then,
+$A^\dagger= A \implies \sum\limits_{i}a_i^*\ket{i}\bra{i} =$\sum\limits_{i}a_i\ket{i}\bra{i} $
+$\implies a_i^* = a_i$, 
+and this condition is only possible if a is real !
+
+\section{Q .2.18}
+ if U is the unitary operator, $\ket{v}$ is the normalised  eigenvector and a is its eigenvalue then,
+\newline
+$U\ket{v} = a\ket{v}$\\
+$\bra{v}U^\dagger = a^*\bra{v}$\\
+$\bra{v}U^\dagger U\ket{v}=a^*a\bra{v}\ket{v}$\\
+$\implies 1= a^*a $...............(1) 
+since, $ U^\dagger U = \mathbb I $\\
+so the modulus $|a|=|\sqrt{a a^*}|= 1 $\\ 
+since, any complex number can be written as $re^{i\theta}$
+following equation (1), we get :\\$|r^2 e^{i\theta} e^{-i\theta}|= |r^2| = 1 \implies |r| = 1\\$ 
+\newline
+So, eigenvalues of U is a = $e^{i\theta}$, where $\theta$ is real 
+
+\end{Large}
+\end{document}
